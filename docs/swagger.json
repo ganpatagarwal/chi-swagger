@@ -1,0 +1,49 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "chi-swagger example APIs",
+        "title": "chi-swagger example APIs",
+        "contact": {},
+        "license": {},
+        "version": "1.0"
+    },
+    "basePath": "/",
+    "paths": {
+        "/": {
+            "get": {
+                "description": "Tells if the chi-swagger APIs are working or not.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "chi-swagger"
+                ],
+                "summary": "This API can be used as health check for this application.",
+                "responses": {
+                    "200": {
+                        "description": "api response",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "handlers.response": {
+            "type": "object",
+            "properties": {
+                "status": {
+                    "type": "string"
+                },
+                "statusCode": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}

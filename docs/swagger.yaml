@@ -1,0 +1,32 @@
+basePath: /
+definitions:
+  handlers.response:
+    properties:
+      status:
+        type: string
+      statusCode:
+        type: integer
+    type: object
+info:
+  contact: {}
+  description: chi-swagger example APIs
+  license: {}
+  title: chi-swagger example APIs
+  version: "1.0"
+paths:
+  /:
+    get:
+      consumes:
+      - application/json
+      description: Tells if the chi-swagger APIs are working or not.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: api response
+          schema:
+            type: string
+      summary: This API can be used as health check for this application.
+      tags:
+      - chi-swagger
+swagger: "2.0"
